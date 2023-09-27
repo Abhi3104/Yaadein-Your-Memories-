@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaadein Sign_Up Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Logo & img/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Logo & img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Logo & img/logo.png">
+    <link rel="stylesheet" href="project.css">
+    <script src="signup.js"></script>
+</head>
+<script src="https://kit.fontawesome.com/f823baf0d6.js" crossorigin="anonymous"></script>
+<style>
+body
+{
+    /* background-color: rgb(107, 4, 81); */
+    background: url('./Logo & img/SignUp.jpg');
+    background-size: cover;
+    /* color: black;    */
+    /* font-family: Verdana; */
+    font-family: 'Black Ops One', cursive;
+
+}
+.signuser::after
+{
+    content: '*';
+    color: red;
+}
+</style>
+
+<body>
+    <!-- <div id="signback"> -->
+
+        <div id="signup">
+                <h1>SignUp to Yaadein</h1>        
+                <form action="" id="signupForm">
+                    <div class="signuser">
+                        <i class="fa-solid fa-user-pen fa-flip"></i>                        
+                        <input type="text" id="name" placeholder="Enter your Name">
+                    </div>
+
+                    <div class="signuser">
+                        <i class="fa-solid fa-envelope fa-flip"></i>                        
+                        <input type="text" id="emailid" placeholder="Enter your Email">
+                    </div>
+        
+                    <div class="signuser">
+                        <i class="fa-solid fa-lock fa-flip"></i>          
+                        <input type="password" name="pass" id="pass" placeholder="Password" onclick="togglePasswordStrength()">
+                        <button id="togglePassword" type="button">&#128065;</button>
+                    </div>
+
+                    
+                    <div class="signuser">
+                        <i class="fa-solid fa-lock fa-flip"></i>          
+                        <input type="password" id="cpass" placeholder="Confirm Password">
+                    </div>
+                    
+                    <div id="passwordStrength" class="password-strength">
+                        Password strength: 
+                        <span id="strengthPercent">
+                            0%
+                        </span>
+                    </div>
+
+                    <div class="agree">
+                        <input type="checkbox" id="terms">
+                        I agree to the <a href="">terms & Conditioins.</a>
+                    </div>
+             
+                <a href="login.html"><button class="btns">Sign In</button></a>
+                </form>
+                <div class="or">
+                    or
+                </div>
+
+                <button class="btns">
+                    <a href="login.html">Already have an account</a>
+                </button>
+    
+        </div>
+    <!-- </div> -->
+
+
+</body>
+</html>

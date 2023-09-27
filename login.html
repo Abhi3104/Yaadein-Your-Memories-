@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaadein Log_In Page</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/Logo & img/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Logo & img/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Logo & img/logo.png">
+  <link rel="stylesheet" href="project.css">
+  <script src="login.js"></script>
+</head>
+<script src="https://kit.fontawesome.com/f823baf0d6.js" crossorigin="anonymous"></script>
+
+
+<style>
+  body 
+  {
+    background: url('./Logo & img/LogIn.jpg');
+    background-size: cover;
+    /* opacity: 0.1;  */
+    /* transform: matrix(); */
+    font-family: Verdana;
+  }
+  .loginuser::after
+  {
+    content: '*';
+    color: red;
+  }
+</style>
+
+<body>
+
+  <div id="login">
+    <h1>Login to Yaadein</h1>
+
+    <form action="" method="POST"></form>
+
+      <div class="loginuser" >
+          <i class="fa-solid fa-user fa-flip"></i>          
+          <input type="text" id="username" name="username" required placeholder="Enter your Email Id">
+      </div>
+
+      <div class="loginuser">
+        <i class="fa-solid fa-lock fa-flip"></i>          
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+        <button id="togglePasswordlogin" type="button">&#128065;</button>
+      </div>
+
+      <div id="frg_bckhm">
+        <div class="frgtpass">
+          <a href="forgotPass.html">Forget password?</a>
+        </div>
+
+        <div class="bckhome">
+        <a href="homepage.html"> <i class="fa-solid fa-arrow-rotate-left fa-spin fa-spin-reverse"></i> Back to Home</a>
+        </div>
+      </div>
+      
+
+      <a href="userEntry.html"><button type="submit" class="btn">Login</button></a>
+
+      <div id="span">
+        <span>Or SignUp Using</span>
+      </div>
+
+      <div id="fontaw">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-shake"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-shake"></i></a>
+        <a href="https://mail.google.com"><i class="fa-brands fa-google fa-shake"></i></a>
+      </div>
+
+    </form>
+
+  </div>   
+
+</body>
+
+</html>
